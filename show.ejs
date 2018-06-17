@@ -1,0 +1,14 @@
+<center><h1>As per Search Movies found :</h1></center>
+<hr>
+<% data.forEach(function(mov){ %>
+    
+    <div>
+        Title :<strong><%= mov.Title %></strong>    <br>
+        Year : <%= mov.Year %>      <br>
+        imdbID : <%= mov.imdbID %>  <br>
+        Type : <%= mov.Type %>      <br>
+        <img src= <%= mov.Poster %> > 
+    </div>
+    <hr>
+    
+<% }); %>
